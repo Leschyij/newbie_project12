@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 80px;
+    font-family: League Spartan;
+    font-size: 15px;
+}
+
+#upper_page {
+    height: 49.5%;
+    display: flex;
+    padding: 30px;
+}
+
+#upper_page #title {
+    width: 49.5%;
+    padding: 30px 200px 30px 30px;
+}
+
+#title h1 {
+    font-size: 4em;
+    color: hsl(300, 43%, 22%);
+}
+
+#title p {
+    color: hsl(303, 10%, 53%);
+    margin-top: 50px;
+    line-height: 1.5em;
+}
+
+#upper_page #rating {
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#rating .rating_card {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 25px;
+    display: flex;
+}
+
+#rating #reviews {
+    margin: 20px auto 20px 0;
+}
+
+#rating #guru {
+    margin: 20px auto;
+}
+
+#rating #besttech {
+    margin: 20px 0 20px auto;
+}
+
+.rating_card p {
+    margin-top: 3px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+#lower_page {
+    height: 49.5%;
+    display: flex;
+}
+
+#lower_page .card {
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#lower_page #colton {
+    align-self: flex-start;
+}
+
+#lower_page #anne {
+    align-self: flex-end;
+}
+
+#lower_page #irene {
+    align-self: center;
+}
+
+.card img {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.card .name {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.card .veri {
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.card p {
+    margin-top: 20px;
+    line-height: 1em;
+}
+
+@media screen and (max-width: 1430px) {
+    #upper_page #title {
+        padding-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    body {
+        padding: 40px;
+    }
+
+    #upper_page #title {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        width: 90vw;
+        margin: 30px auto;
+    }
+
+    #upper_page {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #upper_page #title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #upper_page #rating {
+        width: 100%;
+    }
+
+    #rating .rating_card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #lower_page {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #lower_page .card {
+        max-width: 400px;
+    }
+
+    #lower_page #colton,
+    #lower_page #anne,
+    #lower_page #irene {
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
